@@ -5,8 +5,16 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def inde():
-    return "Hello World"
+def home():
+    return "Home Page"
+
+@app.route('/AboutMe')
+def about():
+    return "About Me "
+
+@app.route('/Projects')
+def projects():
+    return "Projects"
 
 
 
